@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-qnax
+  namespace: cbanavik-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:a16008efddb8aa8d6bcc413a02547a5012113078924344297965212a6d9b6821
+        name: my-nodejs
+        resources: {}
+status: {}
